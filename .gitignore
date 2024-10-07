@@ -1,3 +1,5 @@
+.gitlab-secrets
+
 /.classpath
 /.project
 /target/
