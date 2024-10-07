@@ -30,6 +30,20 @@
           <name>public-maven-virtual</name>
           <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
         </repository>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>public-remote-maven-mavenorg</name>
+          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>public-remote-maven-mavenorg</name>
+          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
+        </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
@@ -45,6 +59,20 @@
           <id>snapshots</id>
           <name>public-maven-virtual</name>
           <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>public-remote-maven-mavenorg</name>
+          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>public-remote-maven-mavenorg</name>
+          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>

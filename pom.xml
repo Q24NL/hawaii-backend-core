@@ -413,27 +413,40 @@
 
   <distributionManagement>
     <repository>
-      <id>hawaii-releases</id>
-      <name>hawaii-releases</name>
-      <url>http://localhost:8088/artifactory/releases</url>
+      <id>central</id>
+      <name>vzcdaas-artifactory-primary-0-releases</name>
+      <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
     </repository>
     <snapshotRepository>
-      <id>hawaii-snapshots</id>
-      <name>hawaii-snapshots</name>
-      <url>http://localhost:8088/artifactory/snapshots</url>
+      <id>snapshots</id>
+      <name>vzcdaas-artifactory-primary-0-snapshots</name>
+      <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
     </snapshotRepository>
   </distributionManagement>
 
-  <repositories>
-    <repository>
-      <id>JBoss repository</id>
-      <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-    </repository>
-    <repository>
-      <id>java.net-m2</id>
-      <name>java.net - Maven 2</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/java.net-m2</url>
-    </repository>
-  </repositories>
+<!--  <distributionManagement>-->
+<!--    <repository>-->
+<!--      <id>hawaii-releases</id>-->
+<!--      <name>hawaii-releases</name>-->
+<!--      <url>http://localhost:8088/artifactory/releases</url>-->
+<!--    </repository>-->
+<!--    <snapshotRepository>-->
+<!--      <id>hawaii-snapshots</id>-->
+<!--      <name>hawaii-snapshots</name>-->
+<!--      <url>http://localhost:8088/artifactory/snapshots</url>-->
+<!--    </snapshotRepository>-->
+<!--  </distributionManagement>-->
+
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id>JBoss repository</id>-->
+<!--      <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>-->
+<!--    </repository>-->
+<!--    <repository>-->
+<!--      <id>java.net-m2</id>-->
+<!--      <name>java.net - Maven 2</name>-->
+<!--      <url>https://repository.jboss.org/nexus/content/repositories/java.net-m2</url>-->
+<!--    </repository>-->
+<!--  </repositories>-->
 
 </project>
