@@ -1,0 +1,9 @@
+hawaii-backend-core:build:
+  variables:
+    # Gradle needs the artifactory URL, construct it from the hostname which is configured in Gitlab (which is needed for Docker too)
+    ARTIFACTORY_URL: "https://${ARTIFACTORY_HOSTNAME}/artifactory"
+  stage: "build"
+  image: "eclipse-temurin:11-jdk-jammy"
+  script:
+    - "chmod +x mvnw"
+    - "./mvnw clean package"
