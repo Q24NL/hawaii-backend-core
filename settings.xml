@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>${env.GITLAB_USERNAME}}</username>
-      <password>${env.GITLAB_PASSWORD}}</password>
+      <username>${env.ARTIFACTORY_USER}}</username>
+      <password>${env.ARTIFACTORY_PASS}}</password>
       <id>central</id>
     </server>
     <server>
-      <username>${env.GITLAB_USERNAME}}</username>
-      <password>${env.GITLAB_PASSWORD}}</password>
+      <username>${env.ARTIFACTORY_USER}}</username>
+      <password>${env.ARTIFACTORY_PASS}}</password>
       <id>snapshots</id>
     </server>
   </servers>
