@@ -398,6 +398,10 @@
             <exclude>**/*.txt</exclude>
             <exclude>conf/**</exclude>
             <exclude>target/**</exclude>
+            <exclude>settings.xml</exclude>
+            <exclude>.gitlab-ci.yml</exclude>
+            <exclude>**/*.cmd</exclude>
+            <exclude>.mvn/**</exclude>
           </excludes>
         </configuration>
         <executions>
@@ -413,40 +417,14 @@
 
   <distributionManagement>
     <repository>
-      <id>central</id>
-      <name>vzcdaas-artifactory-primary-0-releases</name>
-      <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
+      <id>win-mycare</id>
+      <name>win-mycare</name>
+      <url>https://vzcdaas.jfrog.io/artifactory/win-mycare</url>
     </repository>
     <snapshotRepository>
-      <id>snapshots</id>
-      <name>vzcdaas-artifactory-primary-0-snapshots</name>
-      <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
+      <id>win-mycare-snapshots</id>
+      <name>win-mycare-snapshots</name>
+      <url>https://vzcdaas.jfrog.io/artifactory/win-mycare-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
-
-<!--  <distributionManagement>-->
-<!--    <repository>-->
-<!--      <id>hawaii-releases</id>-->
-<!--      <name>hawaii-releases</name>-->
-<!--      <url>http://localhost:8088/artifactory/releases</url>-->
-<!--    </repository>-->
-<!--    <snapshotRepository>-->
-<!--      <id>hawaii-snapshots</id>-->
-<!--      <name>hawaii-snapshots</name>-->
-<!--      <url>http://localhost:8088/artifactory/snapshots</url>-->
-<!--    </snapshotRepository>-->
-<!--  </distributionManagement>-->
-
-<!--  <repositories>-->
-<!--    <repository>-->
-<!--      <id>JBoss repository</id>-->
-<!--      <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>-->
-<!--    </repository>-->
-<!--    <repository>-->
-<!--      <id>java.net-m2</id>-->
-<!--      <name>java.net - Maven 2</name>-->
-<!--      <url>https://repository.jboss.org/nexus/content/repositories/java.net-m2</url>-->
-<!--    </repository>-->
-<!--  </repositories>-->
-
 </project>

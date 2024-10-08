@@ -3,82 +3,27 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>${env.ARTIFACTORY_USER}}</username>
-      <password>${env.ARTIFACTORY_PASS}}</password>
-      <id>central</id>
+      <username>${env.ARTIFACTORY_USER}</username>
+      <password>${env.ARTIFACTORY_PASS}</password>
+      <id>win-mycare-virtual</id>
     </server>
     <server>
-      <username>${env.ARTIFACTORY_USER}}</username>
-      <password>${env.ARTIFACTORY_PASS}}</password>
-      <id>snapshots</id>
+      <username>${env.ARTIFACTORY_USER}</username>
+      <password>${env.ARTIFACTORY_PASS}</password>
+      <id>win-mycare</id>
+    </server>
+    <server>
+      <username>${env.ARTIFACTORY_USER}</username>
+      <password>${env.ARTIFACTORY_PASS}</password>
+      <id>win-mycare-snapshots</id>
     </server>
   </servers>
-  <profiles>
-    <profile>
-      <repositories>
-        <repository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>public-maven-virtual</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
-        </repository>
-        <repository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>public-maven-virtual</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
-        </repository>
-        <repository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>public-remote-maven-mavenorg</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
-        </repository>
-        <repository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>public-remote-maven-mavenorg</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>public-maven-virtual</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
-        </pluginRepository>
-        <pluginRepository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>public-maven-virtual</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-maven-virtual</url>
-        </pluginRepository>
-        <pluginRepository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>public-remote-maven-mavenorg</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
-        </pluginRepository>
-        <pluginRepository>
-          <snapshots />
-          <id>snapshots</id>
-          <name>public-remote-maven-mavenorg</name>
-          <url>https://vzcdaas.jfrog.io/artifactory/public-remote-maven-mavenorg</url>
-        </pluginRepository>
-      </pluginRepositories>
-      <id>artifactory</id>
-    </profile>
-  </profiles>
-  <activeProfiles>
-    <activeProfile>artifactory</activeProfile>
-  </activeProfiles>
+  <mirrors>
+    <mirror>
+      <id>win-mycare-virtual</id>
+      <name>win-mycare-virtual</name>
+      <url>https://vzcdaas.jfrog.io/artifactory/win-mycare-virtual</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
 </settings>

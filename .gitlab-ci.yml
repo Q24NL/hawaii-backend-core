@@ -4,6 +4,6 @@ hawaii-backend-core:build:
   script:
     - "source .env"
     - "chmod +x mvnw"
-    - "./mvnw -s settings.xml clean package"
+    - "./mvnw -s settings.xml clean package deploy"
   tags:
     - aws

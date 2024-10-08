@@ -1,4 +1,4 @@
-.gitlab-secrets
+.*secrets
 
 /.classpath
 /.project
